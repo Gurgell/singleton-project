@@ -54,12 +54,18 @@ Foi criado um menu para o usuário interagir com a aplicação, facilitando para
 ## Como Rodar o Projeto
 
 1. Clone o repositório.
-2. Compile o projeto com Maven:
-    ```bash
-    mvn clean install
-    ```
-3. Para rodar a aplicação, execute a classe `Main`:
-    ```bash
-    mvn exec:java -Dexec.mainClass="org.example.Main"
-    ```
+2. Para adicionar manualmente os JARs de dependências do Mockito e JUnit utilizando o IntelliJ, vá
+   para: 
+```
+   File -> Project Structure -> Modules -> Dependencies, e adicione os arquivos .jar (Estão todos na pasta dependencies na raiz do projeto) manualmente.
+```
+3. Para rodar todos os testes unitários, basta ir para o diretório abaixo e executar:
+```
+   src/test/java/org/example/services/ProdutoServiceTest.java
+```
+    
+4. Para rodar a aplicação, execute a classe `Main` que está no diretório:
+```
+    src/main/java/org.example/Main.java
+```
 
